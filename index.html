@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphing Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <h1>Graphing Calculator</h1>
+        
+        <div class="graph-container">
+            <div class="graph-wrapper">
+                <canvas id="graph"></canvas>
+            </div>
+            
+            <div class="controls">
+                <div class="add-equation">
+                    <input type="text" id="new-equation" placeholder="Enter equation (e.g., sin(x), x^2, 3*cos(x))">
+                    <button id="add-equation-btn">Add</button>
+                </div>
+                
+                <div class="equation-list" id="equation-list">
+                    <!-- Equations will be added here -->
+                </div>
+                
+                <div class="graph-controls">
+                    <button id="zoom-in">Zoom In</button>
+                    <button id="zoom-out">Zoom Out</button>
+                    <button id="reset-view">Reset View</button>
+                </div>
+                
+                <div class="instructions">
+                    <h3>Instructions</h3>
+                    <ul>
+                        <li>Enter equations like: <code>x^2</code>, <code>sin(x)</code>, <code>3*cos(x)</code></li>
+                        <li>Use <code>^</code> for exponents (e.g., <code>x^3</code>)</li>
+                        <li>Supported functions: <code>sin</code>, <code>cos</code>, <code>tan</code>, <code>sqrt</code>, <code>abs</code></li>
+                        <li>Click on an equation to edit it</li>
+                        <li>Drag to pan, scroll to zoom</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

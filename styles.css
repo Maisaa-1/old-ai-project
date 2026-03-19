@@ -1,0 +1,161 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.calculator-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+.graph-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.graph-wrapper {
+    flex: 2;
+    min-width: 600px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+#graph {
+    width: 100%;
+    height: 500px;
+    border: 1px solid #ddd;
+    background-color: white;
+}
+
+.controls {
+    flex: 1;
+    min-width: 300px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+.equation-list {
+    margin-bottom: 20px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.equation-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+.equation-color {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.equation-input {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+.remove-equation {
+    background: none;
+    border: none;
+    color: #e74c3c;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.add-equation {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#new-equation {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    font-family: monospace;
+}
+
+#add-equation-btn {
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+#add-equation-btn:hover {
+    background-color: #2980b9;
+}
+
+.graph-controls {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.graph-controls button {
+    padding: 8px 12px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.graph-controls button:hover {
+    background-color: #27ae60;
+}
+
+.instructions {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #f0f8ff;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.instructions h3 {
+    margin-top: 0;
+    color: #2c3e50;
+}
+
+.instructions ul {
+    padding-left: 20px;
+}
+
+.instructions code {
+    background-color: #eaeaea;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-family: monospace;
+}
